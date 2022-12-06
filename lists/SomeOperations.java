@@ -1,11 +1,8 @@
-package functions;
+package functions.lists;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.stream.IntStream;
 
-public class Functions {
-
+public class SomeOperations {
     public static int[] remove(int[] a, int index) {
         if (a == null || index < 0 || index >= a.length) {
             return a;
