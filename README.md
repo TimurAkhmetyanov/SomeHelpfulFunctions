@@ -1,3 +1,3 @@
-Some Helpful Functions in java
+# Some Helpful Functions in java
 
 There is documentation:
