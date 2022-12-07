@@ -25,7 +25,7 @@ public class SomeNumbers {
     }
 
     public static int akkerman(int m, int n) {
-        if (m == 0) {
+        if (0 == m) {
             return n + 1;
         }
         if (m > 0 && n == 0) {

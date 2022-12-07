@@ -1,6 +1,5 @@
 package functions.nums;
 
-
 public class ScalesOfNotation  {
     public static String decimalToBinaryString(int base10) {
         int b;

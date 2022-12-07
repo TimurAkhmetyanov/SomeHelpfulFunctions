@@ -1,6 +1,5 @@
 package functions.lists;
 
-
 import java.util.stream.IntStream;
 
 public class SomeOperations {
