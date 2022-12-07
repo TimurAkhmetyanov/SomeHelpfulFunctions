@@ -2,7 +2,6 @@ package functions.nums;
 
 import java.util.HashMap;
 
-
 public class SomeNumbers {
 
     public static int dividers (int num) {

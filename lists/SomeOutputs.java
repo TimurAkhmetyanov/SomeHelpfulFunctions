@@ -1,5 +1,6 @@
 package functions.lists;
 
+
 public class SomeOutputs {
     public static int beforeDigit (char[] number, int num) {
         int n = 0;

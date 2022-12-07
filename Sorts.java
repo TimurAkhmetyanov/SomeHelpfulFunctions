@@ -1,5 +1,6 @@
 package functions;
 
+
 public class Sorts {
     public static int[] sortByBubbleGrowth(int[] a) {
         for (int i = 0; i < a.length - 1; i++) {
