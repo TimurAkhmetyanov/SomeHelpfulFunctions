@@ -9,14 +9,27 @@ void revers(std::string &s) {
     s = rev;
 }
 
-std::string ScalesOfNotation::decimalToBinaryString(int base2) {
+std::string ScalesOfNotation::decimalToBinaryString(int base10) {
     int b;
     std::string num = "";
-    while (base2 != 0) {
-        b = base2 % 2;
+    while (base10 != 0) {
+        b = base10 % 2;
         num += std::to_string(b);
-        base2 = base2/2;
+        base10 = base10/2;
     }
     revers(num);
     return num;
+}
+
+int ScalesOfNotation::decimalToBinaryInt(int base10) {
+    int b;
+    std::string num = "";
+    while (base10 != 0) {
+        b = base10 % 2;
+        num += std::to_string(b);
+        base10 = base10/2;
+    }
+    revers(num);
+    int base2 = std::stoi(num);
+    return base2;
 }

@@ -6,6 +6,7 @@
 class ScalesOfNotation {
 public:
     static std::string decimalToBinaryString(int base10);
+    static int decimalToBinaryInt(int base10);
 };
 
 
