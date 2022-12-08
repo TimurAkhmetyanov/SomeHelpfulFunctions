@@ -3,7 +3,7 @@ package functions.lists;
 import java.util.stream.IntStream;
 
 public class SomeOperations {
-    public static int[] remove(int[] a, int index) {
+    public static int[] removeByIndex(int[] a, int index) {
         if (a == null || index < 0 || index >= a.length) {
             return a;
         }
