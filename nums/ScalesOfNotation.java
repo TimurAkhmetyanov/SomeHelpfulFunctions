@@ -29,26 +29,27 @@ public class ScalesOfNotation  {
         }
         return num;
     }
-    public static int binaryToDecimal(String base2) {
-        int a = Integer.parseInt(base2);
-        if (a==0) return 0;
-        StringBuilder result = new StringBuilder();
-        while (a != 0) {
-            result.append(a & 1);
-            a >>>= 1;
+
+    public static int someToDecimal (int num, int base) {
+        String s = String.valueOf(num);
+        char[] chars = s.toCharArray();
+        int j = 0;
+        int base10 = 0;
+        for (int i = chars.length - 1; i >= 0; i--) {
+            base10 += (chars[i] - '0') * Math.pow(7, j);
+            j++;
         }
-        return Integer.parseInt(result.reverse().toString());
+        return base10;
     }
 
-    public static int binaryToDecimal(int base2) {
-        if (base2 == 0) {
-            return 0;
+    public static int someToDecimal (String num, int base) {
+        char[] chars = num.toCharArray();
+        int j = 0;
+        int base10 = 0;
+        for (int i = chars.length - 1; i >= 0; i--) {
+            base10 += (chars[i] - '0') * Math.pow(7, j);
+            j++;
         }
-        StringBuilder result = new StringBuilder();
-        while (base2 != 0) {
-            result.append(base2 & 1);
-            base2 >>>= 1;
-        }
-        return Integer.parseInt(result.reverse().toString());
+        return base10;
     }
 }
